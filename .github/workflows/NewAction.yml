@@ -1,0 +1,11 @@
+name: test case lab 5
+on: push
+jobs:
+    testing:
+        runs-on: ubuntu-latest
+        steps: 
+           - name: checkout repo
+             uses: actions/checkout@v2
+          
+    
+    
