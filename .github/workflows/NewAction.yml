@@ -19,11 +19,11 @@ jobs:
         needs:  testing
         runs-on: ubuntu-latest
         steps:
-           -name: check repo
-            uses: actions/chechkout@v2
-           -name: deploy
-            run: echo "Done"
-            
+           - name: check repo
+             uses: actions/chechkout@v2
+           - name: deploy
+             run: echo "Done"
+
 
 
           
