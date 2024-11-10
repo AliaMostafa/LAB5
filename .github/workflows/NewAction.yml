@@ -6,6 +6,26 @@ jobs:
         steps: 
            - name: checkout repo
              uses: actions/checkout@v2
+           - name: setup python for any version
+             uses: actions/setup-python@v2
+             width:
+                python-version: "3.9"
+           - name: install req.txt
+             run: pip install -r requirements.txt
+           - name: run tests
+             run: python -m unittest test.py
+            
+    deploy:
+        needs:  testing
+        runs-on: ubuntu-latest
+        steps:
+           -name: check repo
+            uses: actions/chechkout@v2
+           -name: deploy
+            run: echo "Done"
+            
+
+
           
     
     
