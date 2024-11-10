@@ -20,7 +20,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
            - name: check repo
-             uses: actions/chechkout@v4
+             uses: actions/checkout@v4
            - name: deploy
              run: echo "Done"
 
