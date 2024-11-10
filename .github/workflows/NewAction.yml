@@ -5,9 +5,9 @@ jobs:
         runs-on: ubuntu-latest
         steps: 
            - name: checkout repo
-             uses: actions/checkout@v2
+             uses: actions/checkout@v4
            - name: setup python for any version
-             uses: actions/setup-python@v2
+             uses: actions/setup-python@v4
              with:
                 python-version: "3.9"
            - name: install req.txt
@@ -20,7 +20,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
            - name: check repo
-             uses: actions/chechkout@v2
+             uses: actions/chechkout@v4
            - name: deploy
              run: echo "Done"
 
